@@ -22,6 +22,8 @@ body {
 .grid {
     min-width: 16px;
     min-height: 16px;
+    max-width: 64px;
+    max-height: 64px;
     border: 1px solid black;
     background-color: blue;
 }

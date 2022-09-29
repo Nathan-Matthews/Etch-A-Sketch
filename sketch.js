@@ -8,20 +8,23 @@ buttons.addEventListener('click', () => {
     createDivs(size_of_grid);
 });
 
-const grids = document.querySelectorAll('grid');
+// Add event listener for 'hovering' over any of the grid squares.
+const grids = document.querySelectorAll('.grid');
 grids.forEach((grid) => {
-
+    // For each of the grid squares, if the mouse passes over change the color to red.
     grid.addEventListener("mouseover", () => {
         grid.style.backgroundColor = 'red';
     });
 });
 
+// Removes all Child Nodes from the container to set a new grid size.
 function removeAllChildNodes(parent) {
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);
     }
 }
 
+//Creates a grid of inputxinput squares
 function createDivs(input) {
     // Target the container
     const container = document.querySelector('.grid-container');
