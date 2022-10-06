@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: auto;
 }
 
 .btn-container {
@@ -10,7 +9,6 @@ body {
     align-items: center;
     padding: 24px;
     margin: 24px;
-    
 }
 
 .grid-container {
@@ -20,14 +18,8 @@ body {
 }
 
 .grid {
-    min-width: 16px;
-    min-height: 16px;
-    max-width: 64px;
-    max-height: 64px;
+    min-width: 32px;
+    min-height: 32px;
     border: 1px solid black;
-    background-color: blue;
-}
-
-.grid:hover {
-    background-color: rebeccapurple;
+    background-color: gray;
 }
