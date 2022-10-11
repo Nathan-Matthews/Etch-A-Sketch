@@ -15,11 +15,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 640px;
+    min-height: 640px;
 }
 
 .grid {
-    min-width: 32px;
-    min-height: 32px;
+    min-width: 2px;
+    min-height: 2px;
     border: 1px solid black;
     background-color: gray;
 }

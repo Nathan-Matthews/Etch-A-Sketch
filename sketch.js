@@ -30,6 +30,11 @@ function createDivs(input) {
             div.id = 'c' + i + 'r' + j;
             //give the div a class of 'grid'
             div.classList.add('grid');
+
+            
+            div.style.minWidth = 512/input + "px";
+            div.style.minHeight = 512/input + "px";
+
             // append the div to the container
             row.appendChild(div);
         }
