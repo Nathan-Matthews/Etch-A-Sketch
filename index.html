@@ -9,10 +9,24 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>     
+<body>
+    <div class="header">
+        <ul class="left-links">
+            <li>Header Logo</li>
+        </ul>
+    
+        <ul class="right-links">
+            <li><a href="">Reset</a></li>
+            <li><a onclick="createDivs(8)">8 x 8</a></li>
+            <li><a onclick="createDivs(16)">16 x 16</a></li>
+            <li><a onclick="createDivs(32)">32 x 32</a></li>
+            <li><a onclick="createDivs(64)">64 x 64</a></li>
+            <li><a onclick="createDivs(100)">100 x 100</a></li>
+        </ul>
+    </div>     
     <div class="btn-container container">
         <button class="btn">
-            What size grid would you like up to 100x100? (Enter a single integer)
+            Enter an integer value from 1 to 100.
         </button>
     </div>
     <div class="grid-container container">    

@@ -21,6 +21,12 @@ function createDivs(input) {
     const container = document.querySelector('.grid-container');
     // Remove the old grid
     removeAllChildNodes(container);
+    if(input > 100){
+        input = 100;
+    }
+    if(input < 1){
+        input = 1;
+    }
     for(let i = 1; i <= input; i++){
         let row = document.createElement('div');
         for(let j = 1; j <= input; j++){
